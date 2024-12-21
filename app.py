@@ -25,8 +25,8 @@ def getCohereResponse(question, chat_history):
     return response.generations[0].text if response.generations else "No answer generated"
 
 # Streamlit UI
-st.set_page_config(page_title="Bercho - Conversational Q&A Chatbot", page_icon="🤖")
-st.title("Bercho - Conversational Q&A Chatbot 🤖")
+st.set_page_config(page_title="Chatbot - Conversational Q&A", page_icon="🤖")
+st.title("Chatbot - Conversational Q&A 🤖")
 
 # Initialize chat history in session state
 if 'chat_history' not in st.session_state:
